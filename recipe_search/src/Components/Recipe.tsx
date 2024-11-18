@@ -34,7 +34,7 @@ const Recipe = () => {
   };
 
   const showMoreRecipes = () => {
-    setVisibleRecipes((prev) => prev + 3);
+    setVisibleRecipes((prev: number) => prev + 3);
   };
 
   return (
@@ -59,7 +59,7 @@ const Recipe = () => {
           </button>
         </form>
         <h1 className="mt-12 md:text-5xl text-4xl font-bold bg-gradient-to-r from-[#ff7e00] to-blue-400 bg-clip-text text-transparent">
-          Explore Recipe
+          Explore Recipes
         </h1>
       </div>
 
@@ -105,7 +105,7 @@ const Recipe = () => {
             className="px-8 py-3 mt-5 text-white bg-blue-500 rounded-md"
             onClick={showMoreRecipes}
           >
-            Show More
+            Show More Recipes
           </button>
         )}
       </section>
