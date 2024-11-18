@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.3;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-wripper {
+  background: #4f6f52;
+  height: fit-content;
+  margin: 30px 0px;
+  padding: 5px;
+  border-radius: 10px;
+
+
+  form {
+    input {
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+      font-size: 21px;
+      font-weight: 500;
+      border-radius: 10px;
+      outline: none;
+      cursor: copy;
+      transition: 0.4s ease-in;
+      border: 2px solid transparent;
+    }
+  }
+
+  .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2% 0px;
+
+    input {
+      flex: 1;
+      font-size: 22px;
+      font-weight: 550px;
+      text-align: end;
+      padding-right: 10px;
+    }
+  }
+  
+  .equal {
+    width: 135px;
+    background: #A2C579;
+    color: #fff;
+  }
+
+  .btn1-bg {
+    background: #A2C579;
+    color: white;
+  }
+
+  .btn2-bg {
+    background: orangered;
+    color: #fff;
+  }
+
+}
+
+
